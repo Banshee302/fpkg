@@ -1,6 +1,6 @@
 # FPKG
 The Fedurux Package Manager GitHub Mirror.
-**Fpkg is only preinstalled on the currently being developed as of 7/12/2024 FCat-32 Fedurux System! FCat will never support the new Fedurux Libraries being Developed!**
+**Fpkg is only preinstalled on the currently being developed as of 7/12/2024 FCat-32 Fedurux System! FCat-16 will never support the new Fedurux Libraries being Developed!**
 
 Fpkg main mirror supports GitHub and Mega Mirrors for Packages.
 

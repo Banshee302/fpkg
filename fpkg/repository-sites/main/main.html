@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fpkg public mirror</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: white;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function loadXML() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "repo.xml", false);
+            xmlhttp.send();
+            var xmlDoc = xmlhttp.responseXML;
+
+            var table = "<tr><th>Name</th><th>Version</th><th>URL</th><th>Install Path</th><th>Description</th></tr>";
+            var packages = xmlDoc.getElementsByTagName("package");
+
+            for (var i = 0; i < packages.length; i++) {
+                table += "<tr><td>" +
+                    packages[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    packages[i].getElementsByTagName("version")[0].childNodes[0].nodeValue +
+                    "</td><td><a href='" +
+                    packages[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
+                    "'>Download</a></td><td>" +
+                    packages[i].getElementsByTagName("installPath")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    packages[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+
+            document.getElementById("packageTable").innerHTML = table;
+        }
+    </script>
+</head>
+<body onload="loadXML()">
+    <header>
+        fpkg public mirror
+    </header>
+    <div class="content">
+        <p><a href="https://mega.nz/folder/o3NihJaY#uSff7OjKbZYemY8vXdnZHQ">Fedurux Package Manager v1.0</a></p>
+        <table id="packageTable"></table>
+    </div>
+</body>
+</html>

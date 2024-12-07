@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+    <package>
+        <name>example-package</name>
+        <version>1.0.0</version>
+        <url>https://example.com/example-package.tar.gz</url>
+        <installPath>/usr/local/example-package</installPath>
+        <description>Example package for demonstration purposes.</description>
+    </package>
+    <package>
+        <name>another-package</name>
+        <version>2.3.4</version>
+        <url>https://example.com/another-package.tar.gz</url>
+        <installPath>/usr/local/another-package</installPath>
+        <description>Another example package with different version and path.</description>
+    </package>
+</repository>

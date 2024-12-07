@@ -1,0 +1,3 @@
+This directory is used by the Fpkg Utility for Installing Packages!, we do not recommend you modify 'repo.xml' in the main directory, this is the "MAIN" repository for installing packages and Fedurux Utilities/ Community Packages!.
+
+                                                                                                                                                    

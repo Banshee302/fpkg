@@ -3,23 +3,9 @@ The Fedurux Package Manager.
 
 Fpkg main mirror supports GitHub and Mega Mirrors for Packages.
 
-   ____ ___  _     __
-  / __// o |/ //7,'_/
- / _/ / _,'/  ,'/ /_n
-/_/  /_/  /_/\\ |__,'
-(Fpkg banner)
 
 Fpkg v1.0 supports FCat-32 Kernel system and Higher.
-"""
-/==================================================================\
-|| _______  _______  ______            _______                    ||
-||(  ____ \(  ____ \(  __  \ |\     /|(  ____ )|\     /||\     /| ||
-||| (    \/| (    \/| (  \  )| )   ( || (    )|| )   ( |( \   / ) ||
-||| (__    | (__    | |   ) || |   | || (____)|| |   | | \ (_) /  ||
-|||  __)   |  __)   | |   | || |   | ||     __)| |   | |  ) _ (   ||
-||| (      | (      | |   ) || |   | || (\ (   | |   | | / ( ) \  ||
-||| )      | (____/\| (__/  )| (___) || ) \ \__| (___) |( /   \ ) ||
-|||/       (_______/(______/ (_______)|/   \__/(_______)|/     \| ||
-\==================================================================/
-"""
-Fedurux-2 Kernel Startup Banner
+
+# NOTE!
+Fpkg is optimized for Fedurux based Systems, it CAN work on Windows and Linux / Unix based Systems, but it may not work the best!
+.
